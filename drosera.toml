@@ -1,0 +1,18 @@
+ethereum_rpc = "https://rpc.hoodi.ethpandaops.io"
+drosera_rpc = "https://relay.hoodi.drosera.io"
+eth_chain_id = 560048
+drosera_address = "0x91cB447BaFc6e0EA0F4Fe056F5a9b1F14bb06e5D"
+
+[traps]
+
+[traps.mytrap]
+path = "out/FeeSurgeWatcher.sol/FeeSurgeWatcher.json"
+response_contract = "0x7B75f192354bB882d58f27c8eaF40a5108CA5483"
+response_function = "logSpike(uint256,uint256)"
+cooldown_period_blocks = 33
+min_number_of_operators = 1
+max_number_of_operators = 2
+block_sample_size = 10
+private_trap = true
+whitelist = ["0x8930D26C73fAbc96057Cdb95c102E38d191d1859"]
+address = "0x8790EBAad81c1473c9e3b48e0296308C7888dabF"
